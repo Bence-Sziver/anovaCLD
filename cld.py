@@ -23,7 +23,7 @@ with open('data.txt', 'r') as in_file:
         writer.writerows(transpone(lines))
 
 filepath = "data.csv"
-alpha = 0.7
+alpha = 0.05
 
 result_df = anova_cld(filepath, alpha=alpha, method="FisherLSD", verbose = True)
 
